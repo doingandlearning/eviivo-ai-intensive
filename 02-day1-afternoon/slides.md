@@ -16,7 +16,6 @@ The bot logs the message. The inbox shows it as unread. No one sees it until 9am
 
 **Was this a technology failure, a workflow failure, or a design failure?**
 
-<!-- speaker_note: Give 60 seconds. Expect splits. All three are defensible. Hold your own view — you'll return to this scenario at the end of the patterns block to show how each pattern addresses a different layer of the problem. -->
 
 We'll return to this at the end of the session.
 
@@ -140,7 +139,6 @@ resolved autonomously."
 
 **For the 2am mould complaint — what tools would you define?**
 
-<!-- speaker_note: Collect answers. Look for create_incident, notify_duty_manager, send_acknowledgement_to_guest, update_booking_flag. Note any gaps. This seeds the lab exercise later. -->
 
 <!-- end_slide -->
 
@@ -164,9 +162,6 @@ ACTION:  escalate_to_operations(ticket_ids=["T-44", "T-51"], priority="HIGH")
 
 <!-- pause -->
 
-The loop runs until the model decides the task is complete — or hits a stop condition you define.
-
-<!-- speaker_note: Emphasise "stop condition you define." Unbounded loops are a real failure mode. Show this as a feature of your architecture, not a bug the model handles. -->
 
 <!-- end_slide -->
 
@@ -194,11 +189,6 @@ Tool returns an error. Model retries indefinitely. No escalation path.
 
 For an automated check-in workflow — where would you put the stop condition, and what triggers escalation to a human?
 
-<!-- speaker_note: Pre-assign pairs before session starts. Each pair picks a different point in a check-in flow ID verification, room assignment, welcome message, issue detection. Bring back what was the stop condition and what was the escalation trigger? -->
-
-<!-- end_slide -->
-
-## Pattern 3: Multi-Step Reasoning
 
 Sometimes the right answer requires working through intermediate steps — not just retrieving a result.
 
@@ -273,7 +263,6 @@ Reasoning costs tokens. Use it where the quality delta justifies it.
 
 **Does the AI Pricing system currently show its reasoning, or just the rate?**
 
-<!-- speaker_note: This is a genuine question for the rates and pricing team. Don't answer for them. If they say "just the rate" — that's a gap to flag for Day 2 observability discussion. -->
 
 <!-- end_slide -->
 
@@ -353,7 +342,6 @@ drafted   escalation
 
 **Back to the 2am complaint:** which combination of patterns closes the gap?
 
-<!-- speaker_note: Return to the opening slide. Collect responses. Technology failure → tool use (no escalation tool defined). Workflow failure → planning loop (no loop existed, just retrieval). Design failure → handoff (no path from comms to ops). All three are simultaneously true. That's the point. -->
 
 <!-- end_slide -->
 
@@ -498,7 +486,6 @@ the FAQ, escalate_flag: false
 
 
 
-<!-- speaker_note: Circulate during Step 1. Look for pairs where both Skills have the same gap — that signals a team-wide pattern, not an individual issue. Surface this in the debrief. the AI Director may want to observe here — position him as a resource, not a reviewer. -->
 
 <!-- end_slide -->
 
@@ -544,14 +531,6 @@ Write a new Skill for a gap identified this morning. Suggestions: sentiment anal
 
 **Deliverable:** a Skill file (markdown or JSON) + a one-paragraph explanation of the decisions you made. Not code — the Skill definition.
 
-<!-- speaker_note: Option C will attract the most ambitious people. Watch for scope creep — a new Skill that tries to do everything is worse than one that does one thing well. Redirect to "What is the minimum viable Skill that would prove the concept?" -->
-
-<!-- end_slide -->
-
-## Lab: quality gates before you share
-
-Before you present your Skill back to the group, check these four things:
-
 <!-- pause -->
 
 <!-- incremental_lists: true -->
@@ -567,7 +546,6 @@ Before you present your Skill back to the group, check these four things:
 
 These are not bureaucratic gates. They are the difference between a Skill that works in a demo and one that works at 2am on Christmas Eve.
 
-<!-- speaker_note: The Christmas Eve line lands well with hospitality engineers. They know exactly what 2am Christmas Eve looks like. Use it deliberately. -->
 
 <!-- end_slide -->
 
@@ -588,7 +566,6 @@ These are not bureaucratic gates. They are the difference between a Skill that w
 
 **After each presentation:** one observation from the group, one question.
 
-<!-- speaker_note: Keep time strictly — 3 minutes per group. Use the rubric as a shared vocabulary for feedback so feedback is concrete, not qualitative. "The context sufficiency score was a 1 — here's what I'd add" is better than "it needs more detail." -->
 
 <!-- end_slide -->
 
@@ -681,7 +658,6 @@ GetReservation(
 
 <!-- reset_layout -->
 
-<!-- speaker_note: This will land well with the back-end architect and the front-end manager. Mention that Semantic Kernel's Planner component is essentially the ReAct pattern with a C# orchestration wrapper. The patterns from Part 1 map directly. -->
 
 <!-- end_slide -->
 
@@ -718,7 +694,6 @@ A developer who knows LangChain but not the patterns is stuck when the framework
 
 **Does eviivo currently have any agent infrastructure that would benefit from a framework wrapper — or are you still at the patterns stage?**
 
-<!-- speaker_note: This is genuinely useful intelligence for Day 2. the AI Director may have a view here — invite them. If the answer is "patterns stage," reinforce that frameworks can wait. If there's existing infra, that's a Day 2 architecture conversation. -->
 
 <!-- end_slide -->
 

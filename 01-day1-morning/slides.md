@@ -14,7 +14,6 @@ The bot sends a cheerful automated reply: *"Thanks for reaching out! We'll be in
 
 **Who owns this failure? [A] The prompt  [B] The workflow  [C] The missing context**
 
-<!-- speaker_note: Hold for 30 seconds. Don't explain the options yet. You want split answers — all three are defensible and that's the point. Come back to this on the penultimate content slide. -->
 
 We'll come back to this at the end of the morning.
 
@@ -49,7 +48,6 @@ Three squads, three simultaneous contributions. You have **15 minutes**.
 <!-- incremental_lists: false -->
 
 
-<!-- speaker_note: Pre-load the board with four swim lanes Skills/Prompts | Workflows | Integrations | Dead Ends. Have sticky templates ready. Give squads 15 minutes then call time — be firm. The messiness of this board is the raw material for the next two sections. -->
 
 <!-- end_slide -->
 
@@ -87,7 +85,6 @@ Three squads, three simultaneous contributions. You have **15 minutes**.
 
 <!-- reset_layout -->
 
-<!-- speaker_note: Walk the board squad by squad. Don't evaluate yet — just classify. The goal is to surface the pattern things exist in isolation, assumptions are invisible, duplication is rife. Name what you see rather than asking for it. -->
 
 <!-- end_slide -->
 
@@ -122,7 +119,6 @@ It's what happens when capable engineers move fast without shared standards.
 
 <!-- reset_layout -->
 
-<!-- speaker_note: This should land as recognition, not criticism. You want nods. If someone pushes back ("we do document things"), ask "where does someone new go to find out what Skills exist?" That usually ends the debate gently. -->
 
 <!-- end_slide -->
 
@@ -140,7 +136,6 @@ Part 2 — Where Practice Varies
 
 Compare your Squad's approach to one common task — writing a prompt for a guest-facing reply. What choices did you make that the other squad didn't? What would happen if you swapped prompts?
 
-<!-- speaker_note: Pre-assign rooms Connectivity + Core Platform in one, Web/eCommerce alone or with facilitator check-in. The goal is not to find the "right" answer but to surface that different squads have different implicit standards. Listen for different context injection strategies, different persona assumptions, different tone decisions, different failure handling. Bring back one specific difference per room. -->
 
 <!-- end_slide -->
 
@@ -181,7 +176,6 @@ negative, flag for human review.
 
 **Which one is better? [A] A — simpler, more flexible  [B] B — more context, better output  [C] depends on what you're optimising for**
 
-<!-- speaker_note: The right answer is C — but A and B are both defensible. The point is that Prompt B has explicit context injection, a tone constraint, a word limit, and a handoff condition. None of those choices are obvious. They represent decisions someone made. Without documentation, those decisions are invisible to everyone else. -->
 
 <!-- end_slide -->
 
@@ -205,7 +199,6 @@ These are not edge cases. They are the **shape of your data model** made visible
 
 When an LLM receives bad, missing, or misnamed context — it doesn't crash. It **hallucinates confidently**.
 
-<!-- speaker_note: This is the hinge point. The goal is for the team to name this as a real problem they've seen, not an abstract one. Ask "has anyone seen the bot reply confidently with wrong information?" — you'll get stories. Those stories are this problem. -->
 
 <!-- end_slide -->
 
@@ -250,7 +243,6 @@ Not a style guide. A set of decisions your team makes once, documents, and enfor
 
 <!-- reset_layout -->
 
-<!-- speaker_note: Don't dwell here — this is a framing slide. The team will build their own version of this in the afternoon session. Plant the seed "we're going to build your team's version of this today." -->
 
 <!-- end_slide -->
 
@@ -281,7 +273,6 @@ tested: true
 last_tested: 2026-05-12
 ```
 
-<!-- speaker_note: This is not prescriptive — the team will adapt this. The point is that a Skills registry doesn't need to be a sophisticated system. A YAML file in a shared repo is enough to start. The value is the discipline of writing it down, not the format. -->
 
 <!-- end_slide -->
 
@@ -336,7 +327,6 @@ booking_source_code
 
 Abbreviated field names made sense for database performance in 2010. They are **active liabilities** in a context window in 2026.
 
-<!-- speaker_note: Ask the room "what does your actual schema look like?" — you'll get laughs and recognition. Don't pile on. The point is not that the schema is bad engineering, it's that it was built before LLMs were part of the stack. The fix is a translation/enrichment layer, not a schema rewrite. -->
 
 <!-- end_slide -->
 
@@ -380,7 +370,6 @@ Every model call receives a context window — the complete text (tokens) the mo
 
 <!-- reset_layout -->
 
-<!-- speaker_note: The key insight here token budget management is not an optimisation problem for later. It shapes architecture decisions right now — what to retrieve, what to summarise, what to cache. This becomes critical for scheduling/analytics work and data aggregation patterns. -->
 
 <!-- end_slide -->
 
@@ -416,7 +405,6 @@ Not "what's available?" — that way lies expensive, slow, and unreliable pipeli
 
 <!-- reset_layout -->
 
-<!-- speaker_note: This is a temperature check. C is the most common answer — use it to motivate the afternoon session on architectural patterns. A is the answer you want more people giving by Day 3. -->
 
 <!-- end_slide -->
 
@@ -450,7 +438,6 @@ Test with Opus, deploy with Sonnet, consider Haiku for anything running at volum
 
 Look at two items from your squad's audit wall. For each: which model tier would you actually use, and why? What would need to be true for you to go smaller?
 
-<!-- speaker_note: This question is deliberately economic. Engineers often reach for the most capable model by default. The goal is to start building the habit of model-task matching early. Listen for "we'd need confidence in the output quality" — that's the right instinct, it leads to eval frameworks in Day 2. -->
 
 <!-- end_slide -->
 
@@ -497,7 +484,6 @@ The model never received: sentiment score, prior message count, property respons
 
 The answer is **all three** — and they're connected. A better prompt can't fix missing context. A better workflow can't fix a prompt that has no escalation logic. Context without a workflow to act on it is noise.
 
-<!-- speaker_note: This is the synthesis moment for the morning. You want the team to see that the three failure modes map directly to the three things they'll work on during the course prompts/Skills (Day 1 afternoon), workflows and agents (Day 2), integrations and context pipelines (Day 2–3). Connect explicitly if the room is engaged. -->
 
 <!-- end_slide -->
 
@@ -532,7 +518,6 @@ The answer is **all three** — and they're connected. A better prompt can't fix
 
 The audit wall becomes the raw material. Each squad will take one item from their "Dead Ends" lane and rebuild it to shared standards.
 
-<!-- speaker_note: Hard stop here for lunch. Remind the room that the audit board stays up — they'll return to it in the afternoon. If the AI Director has observations from the morning this is a good moment to invite a brief comment (60 seconds max) before breaking. -->
 
 <!-- end_slide -->
 
