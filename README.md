@@ -4,6 +4,10 @@
 
 ---
 
+[FigJam Board](https://www.figma.com/board/w6ThabM3ZV3djApFK6Q8L3/eviivo-AI-Intensive?node-id=0-1&p=f&t=7a4g384w5fLT7VWj-0)
+
+---
+
 ## Day 1 — Audit, Alignment, and Agentic Foundations
 
 ### Morning: Where Are We Now?
