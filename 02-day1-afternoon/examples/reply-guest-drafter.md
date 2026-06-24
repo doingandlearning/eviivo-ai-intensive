@@ -20,10 +20,11 @@ last_tested: 2026-05-12
 ---
 
 # reply-guest-message v1.2
-Owner: Connectivity squad
-Location: skills/reply-guest-message.md (Connectivity squad repo)
-Last reviewed: 2026-05-12
-Trigger: A new inbound guest message arrives in the eviivo Concierge inbox and no human agent has already claimed the conversation.
+
+- Owner: Connectivity squad
+- Location: skills/reply-guest-message.md (Connectivity squad repo)
+- Last reviewed: 2026-05-12
+- Trigger: A new inbound guest message arrives in the eviivo Concierge inbox and no human agent has already claimed the conversation.
 
 ## Purpose
 Draft a first-response reply to an inbound guest message, and flag the conversation for human escalation when sentiment, booking state, or message content indicate it shouldn't be auto-replied to in full.
