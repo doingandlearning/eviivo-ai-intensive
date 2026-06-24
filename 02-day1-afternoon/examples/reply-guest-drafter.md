@@ -18,9 +18,9 @@ tested: true
 last_tested: 2026-05-12
 ---
 
-# guest-reply-drafter v1.2
+# reply-guest-message v1.2
 Owner: Connectivity squad
-Location: skills/guest-reply-drafter.md (Connectivity squad repo)
+Location: skills/reply-guest-message.md (Connectivity squad repo)
 Last reviewed: 2026-05-12
 Trigger: A new inbound guest message arrives in the eviivo Concierge inbox and no human agent has already claimed the conversation.
 
