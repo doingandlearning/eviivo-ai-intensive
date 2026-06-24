@@ -9,6 +9,8 @@
 
 You and a partner will apply the Skills rubric to real Skills surfaced in this morning's audit.
 
+A fully-specified worked example — scoring 3/3 on every dimension below — is in [`examples/guest-reply-drafter.md`](examples/guest-reply-drafter.md). Use it as the reference point for what a 3 looks like on each dimension, not as something to copy verbatim.
+
 ### The rubric
 
 Score each dimension 1–3:
