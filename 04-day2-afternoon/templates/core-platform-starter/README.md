@@ -33,6 +33,10 @@ dotnet run
 
 Once your tool compiles and the server starts, use the MCP inspector to call it across a 5–7 night range so you hit both a weekday and a weekend, including the stop-sell night.
 
+```bash
+npx @modelcontextprotocol/inspector dotnet run
+```
+
 ## Stretch goal (workflow pattern)
 
 Sketch a `BackgroundService` that consumes a RabbitMQ message and calls your tool — you don't need a live RabbitMQ connection, a stub consumer that logs the call is enough to demonstrate the pattern.

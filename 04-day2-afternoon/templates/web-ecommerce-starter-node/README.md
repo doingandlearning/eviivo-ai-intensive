@@ -27,7 +27,7 @@ npm install
 
 Open `src/BookingTools.ts` and write the `server.tool(...)` call for `get_guest_conversation`. There's a commented-out example shape in the file — don't just uncomment and fill it in blindly, write your own description first.
 
-Worth deciding as a squad: should the description tell Claude this returns the *full* thread (so it can judge sentiment/urgency itself), or should the tool itself flag something like "unresolved" — i.e., is triage the tool's job or the agent's job?
+Worth deciding as a squad: should the description tell Claude this returns the _full_ thread (so it can judge sentiment/urgency itself), or should the tool itself flag something like "unresolved" — i.e., is triage the tool's job or the agent's job?
 
 ## Run it
 
@@ -47,4 +47,4 @@ Add a second tool that would naturally follow — e.g. drafting or sending a rep
 
 ## One thing to know about the package
 
-This uses `@modelcontextprotocol/sdk` (v1, currently 1.29.0) — the stable, mature SDK line. There is also a `@modelcontextprotocol/server` v2 package on npm, which is what the *current* official quickstart docs show — but as of this session it's alpha-only (`2.0.0-alpha.2`) and explicitly not API-stable yet. Don't follow the v2-flavoured quickstart examples you might find by searching; this starter is deliberately pinned to v1 so it doesn't break mid-lab. If you want to use v2 later, there's a migration guide linked from the v2 package's README.
+This uses `@modelcontextprotocol/sdk` (v1, currently 1.29.0) — the stable, mature SDK line. There is also a `@modelcontextprotocol/server` v2 package on npm, which is what the _current_ official quickstart docs show but as of this session it's alpha-only (`2.0.0-alpha.2`) and explicitly not API-stable yet. Don't follow the v2-flavoured quickstart examples you might find by searching; this starter is deliberately pinned to v1 so it doesn't break mid-lab. If you want to use v2 later, there's a migration guide linked from the v2 package's README.

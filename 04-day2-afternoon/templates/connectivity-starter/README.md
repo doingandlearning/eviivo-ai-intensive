@@ -32,6 +32,10 @@ dotnet run
 
 Once your tool compiles and the server starts, use the MCP inspector to confirm the tool is listed and call it with `channel = "Booking.com"` to see the error scenario come back.
 
+```bash
+npx @modelcontextprotocol/inspector dotnet run
+```
+
 ## Stretch goal
 
 Add `TriggerChannelResync(propertyId, channel)` as a second tool — the natural next action after spotting an error or pending-updates state.

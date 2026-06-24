@@ -26,7 +26,11 @@ dotnet build
 dotnet run
 ```
 
-Once your tool compiles and the server starts, use the MCP inspector and call it with both `EVV-2026-00123` and `EVV-2026-00456` to see the contrast between a resolved and an unresolved thread.
+Once your tool compiles and the server starts, use the MCP inspector to call it with both `EVV-2026-00123` and `EVV-2026-00456` to see the contrast between a resolved and an unresolved thread.
+
+```bash
+npx @modelcontextprotocol/inspector dotnet run
+```
 
 ## Stretch goal
 
