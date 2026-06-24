@@ -6,7 +6,8 @@ purpose: Generate a first-response to a guest message in the eviivo Concierge in
 inputs:
   - message: string (the guest's raw message text)
   - property_name: string
-  - tone_profile: enum [professional, friendly, formal] — default: friendly
+  - tone_profile: enum [professional, friendly, formal] 
+    — default: friendly
   - booking_state: enum [pre-arrival, in-stay, post-stay, no-booking] — required
 outputs:
   - reply_text: string (max 120 words)
