@@ -459,6 +459,18 @@ Three rules for the next 60 minutes:
 - **The `[Description]` attribute is not optional.** Write it before writing the implementation.
 - **If you're blocked for more than 10 minutes, ask.** Don't debug in silence.
 
+This lists the tools:
+
+```bash
+npx @modelcontextprotocol/inspector --cli dotnet run --method tools/list
+```
+
+This is an example call:
+
+```bash
+npx @modelcontextprotocol/inspector --cli dotnet run --method tools/call --tool-name get_booking_status --tool-arg bookingRef=ABC123
+```
+<
 <!-- incremental_lists: false -->
 
 <!-- speaker_note: Set a 30-minute checkpoint. Ask each squad "what's your working tool?" If a squad is stuck on setup, pair them with a senior engineer. -->
