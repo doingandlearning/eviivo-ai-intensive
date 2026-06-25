@@ -1,0 +1,10 @@
+{
+  "servers": {
+    "eviivo-mcp": {
+      "type": "stdio",
+      "command": "dotnet",
+      "args": ["run"]
+    }
+  },
+  "inputs": []
+}
