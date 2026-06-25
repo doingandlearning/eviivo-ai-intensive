@@ -1,3 +1,5 @@
+using EviivoRatesMcpServer.Prompts;
+using EviivoRatesMcpServer.Resources;
 using EviivoRatesMcpServer.Services;
 using EviivoRatesMcpServer.Tools;
 
@@ -40,6 +42,15 @@ else
 // Always registered, regardless of the toggle above — this is the contrasting tool that gives
 // list_tools() a genuine second option to choose between.
 mcpServerBuilder.WithTools<BookingLookupTool>();
+
+// Resource: static property configuration (yield target, min-stay rules, stop-sell policy).
+// Demonstrates the Resources primitive — context the agent loads before acting rather than
+// data returned from a tool call. URI template: eviivo://property/{propertyId}/config
+// mcpServerBuilder.WithResources<PropertyConfigResource>();
+
+// Prompt: structured rate review template. Demonstrates the Prompts primitive — a reusable
+// server-side task template the agent receives and executes step by step.
+// mcpServerBuilder.WithPrompts<RateReviewPrompt>();
 
 var app = builder.Build();
 
