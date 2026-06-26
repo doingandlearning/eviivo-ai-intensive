@@ -728,6 +728,15 @@ Design what an ISV partner needs from an eviivo MCP server to build a third-part
 4. How do you version and deprecate tools when ISVs depend on them?
 5. What would the partner developer experience look like? What would they build first?
 
+**Track C — Operational Intelligence**
+Design an internal MCP composition for a property manager "copilot" that surfaces operational insights and automates routine decisions:
+
+1. List the tools (name, description, inputs, outputs) that the copilot needs — think occupancy, maintenance, staff scheduling, and revenue signals
+2. Draw the agent decision flow for a morning briefing: what does the agent check, in what order, and what does it escalate vs. auto-resolve?
+3. Define the human-in-the-loop boundary: which decisions must a property manager confirm, and what confidence threshold triggers automatic action?
+4. Design the memory model: what does the agent remember across sessions (per-property context, recurring issues, manager preferences) and where is that state stored?
+5. Decide: what is the minimum viable version you could ship next quarter, and what metric proves it saved a property manager real time?
+
 <!-- reset_layout -->
 
 **Regroup at [time]. Each group presents their tool list and their top risk.**
